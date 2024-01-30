@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "e-commerce-app" : "npm start --prefix ../e-commerce-app",
+    "dev" : "concurrently \"npm start\" \"npm run e-commerce-app\""
   },
   "author": "",
   "license": "ISC",
