@@ -127,9 +127,9 @@ const path = require('path');
          res.send(result);
    } )
 
-app.use(express.static(path.join(__dirname,'../e-commerce-app/build')));
+app.use(express.static(path.join(__dirname,'./e-commerce-app/build')));
 app.get('*', (req,res)=>{
-    res.sendFile(path.join(__dirname, '../e-commerce-app/build/index.html'));
+    res.sendFile(path.join(__dirname, './e-commerce-app/build/index.html'));
 })
    
 app.get('/', (req,res)=>{
