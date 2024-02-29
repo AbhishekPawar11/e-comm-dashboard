@@ -56,7 +56,7 @@ const path = require('path');
      if(req.body.password && req.body.email){
      let user  = await User.findOne(req.body).select('-password');
      if(user){
-         jwt.sign({user},jwtKey,{expiresIn:"2h"},(err,token)=>{
+         jwt.sign({user},process.env.JWT_KEY,{expiresIn:"2h"},(err,token)=>{
             if(err){
                res.send({"error":"somethig went wrong"});
             }
