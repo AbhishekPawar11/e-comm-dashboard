@@ -42,7 +42,7 @@ const path = require('path');
     let result = await user.save();
        result = result.toObject();
        delete result.password;
-       jwt.sign({result},jwtKey,{expiresIn:"2h"},(err,token)=>{
+       jwt.sign({result},process.env.JWT_KEY,{expiresIn:"2h"},(err,token)=>{
            if(err){
                res.send({"error":"something went wrong"});
            }
