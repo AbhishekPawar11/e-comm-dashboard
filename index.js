@@ -1,16 +1,17 @@
 const express = require('express');
 const app = express();
+require('dotenv').config();
 const port = process.env.PORT ||  5000;
 const cors = require('cors');
 const mongoose = require('mongoose');
 const User = require('./Models.js/user');
 const Product = require('./Models.js/product');
 const jwt = require('jsonwebtoken');
-const jwtKey = 'Abhi123';
+
 const path = require('path');
 
 
- mongoose.connect('mongodb+srv://Abhishek_Pawar:Abhi1108@cluster0fb.ix831qr.mongodb.net/e-comm').then(()=>{
+ mongoose.connect(process.env.MONGO_URL).then(()=>{
     console.log("database connected");
 }).catch((err)=>{
     console.log(err);
@@ -23,7 +24,7 @@ const path = require('path');
         
     let token = req.headers['authorization'];
     if(token){
-         jwt.verify(token, jwtKey, (err,valid)=>{
+         jwt.verify(token, process.env.JWT_KEY, (err,valid)=>{
              if(err){
                   res.status(401).send({result:"Please provide valid Token"})
              }else{
