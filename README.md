@@ -36,6 +36,46 @@ The MERN stack is a popular JavaScript stack used for building full-stack web ap
 - **React.js**: A JavaScript library for building user interfaces. It enables the creation of interactive and dynamic UI components.
 - **Node.js**: A JavaScript runtime environment that allows running JavaScript code outside the web browser. It's commonly used for building server-side applications.
 
+# Shopping Portal API
+
+Welcome to the Shopping Portal API documentation! This API provides endpoints for managing products, user authentication, and search functionality in the Shopping Portal.
+
+## API Endpoints
+
+### Products
+
+- **GET /products**
+  - Retrieves a list of all products available in the shopping portal.
+
+- **GET /products/:id**
+  - Retrieves details of a specific product identified by its ID.
+
+- **POST /products**
+  - Creates a new product in the shopping portal.
+
+- **POST /products/:id**
+  - Updates details of an existing product identified by its ID.
+
+- **DELETE /products/:id**
+  - Deletes a product from the shopping portal based on its ID.
+
+### Authentication
+
+- **POST /register**
+  - Registers a new user in the system.
+
+- **POST /login**
+  - Authenticates a user by providing login credentials.
+
+### Search
+
+- **GET /search**
+  - Searches for products based on keywords.
+
+These are the main API endpoints in the Shopping Portal API, each serving a specific purpose related to managing products, user authentication, and search functionality.
+
+
+
 ## Contributing
 
 If you'd like to contribute to this project, you can fork the repository, make your changes, and submit a pull request. Contributions are always welcome!
