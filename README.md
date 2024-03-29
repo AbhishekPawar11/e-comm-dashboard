@@ -1,6 +1,6 @@
-# E-Commerce Dashboard (Shoping Portal)
+# E-Commerce Dashboard(Shoping Portal)
 
-Welcome to the Shoping Portal named E-Commerce Dashboard project! This project is built using the MERN stack and provides a platform for managing and showcasing products.
+Welcome to the Shopping Portal named E-Commerce Dashboard project! This project is built using the MERN stack and provides a platform for managing and showcasing products.
 
 ## Accessing the Dashboard
 
@@ -21,6 +21,11 @@ The E-Commerce Dashboard is hosted on Render. You can access it by clicking the 
 
 - Search for products based on keywords.
 - Get instant search results for relevant products.
+
+### Authentication
+
+- **Register**: Sign up for a new account to access the dashboard.
+- **Login**: Log in with your credentials to manage products and access other features.
 
 ## About the MERN Stack
 
